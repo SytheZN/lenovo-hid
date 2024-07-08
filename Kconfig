@@ -1,6 +1,7 @@
 menuconfig LENOVO_HID
 	tristate "Lenovo handheld peripheral support"
 	depends on USB_HID
+	select POWER_SUPPLY
 	select LEDS_CLASS
 	select LEDS_CLASS_MULTICOLOR
 	help
