@@ -1,0 +1,10 @@
+menuconfig LENOVO_HID
+	tristate "Lenovo handheld peripheral support"
+	depends on USB_HID
+	select LEDS_CLASS
+	select LEDS_CLASS_MULTICOLOR
+	help
+	  This driver provides support for Lenovo Legion Go
+	  and compatible portable PCs by providing RGB LED
+	  control via a	multicolor LED sysfs interface and
+	  Controller support.
